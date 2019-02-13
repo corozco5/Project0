@@ -1,0 +1,65 @@
+body {
+    background-color: white;
+}
+
+.name {
+    background-color: lightblue;
+}
+
+#moretext{
+    background-color: yellow;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+ul.a {
+    list-style-type: circle;
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+li.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+P {
+color: green; }
+
+main {
+     background-color: lightblue;
+
+     article {
+          background-color: yellow;
+     }
+}
+
+  .button {
+        height: 30px;
+        font-size: 16px;
+        padding: 0 2rem; 
+        border-radius: 4px;
+    }
+
+
+    .button-success {
+        @extend .button;
+        background: green;
+        color: white; 
+    }
+
+    .button-danger {
+        @extend .button;
+        background: red;
+        color: white;
+    }
